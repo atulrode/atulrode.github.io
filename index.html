@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Atul Rode — Portfolio</title>
+  <meta name="description" content="Portfolio of Atul Rode — projects, skills, and contact." />
+  <meta name="theme-color" content="#0b1020" />
+  <style>
+    :root{
+      --bg:#0b1020; --card:#0f1724; --muted:#9aa4b2; --accent:#7c5cff; --glass:rgba(255,255,255,0.03);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#061025 0%, #071328 100%);color:#e6eef8;min-height:100vh;line-height:1.45}
+    .container{max-width:980px;margin:48px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#4ad6ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#091027;font-size:32px}
+    h1{margin:0;font-size:28px}
+    .lead{color:var(--muted);margin-top:8px}
+    nav{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+    a.btn{background:var(--glass);color:inherit;padding:8px 12px;border-radius:8px;text-decoration:none;border:1px solid rgba(255,255,255,0.04);font-size:14px}
+    main{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:28px}
+    @media (max-width:880px){main{grid-template-columns:1fr;}}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .projects{display:grid;gap:14px}
+    .project{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02)}
+    .project h3{margin:0 0 6px 0;font-size:16px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+    aside .section-title{font-weight:600;margin-bottom:10px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    footer{margin-top:36px;color:var(--muted);font-size:13px;text-align:center}
+    .socials{display:flex;gap:8px;margin-top:10px}
+    .socials a{color:var(--muted);text-decoration:none;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" aria-hidden="true">AR</div>
+      <div>
+        <h1>Atul Rode</h1>
+        <div class="lead">Software developer • Full‑stack & cloud • Open source enthusiast</div>
+        <nav>
+          <a class="btn" href="#projects">Projects</a>
+          <a class="btn" href="#about">About</a>
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn" href="resume.pdf" target="_blank">Resume</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div id="about" class="card">
+          <h2 style="margin-top:0">About</h2>
+          <p style="color:var(--muted)">Hi — I'm Atul. I build web apps, developer tools, and cloud systems. I enjoy turning complex problems into simple, elegant solutions. Replace this paragraph with a short personal summary that highlights your expertise, preferred tech stack, and what you're looking for.</p>
+        </div>
+
+        <div id="projects" class="card" style="margin-top:16px">
+          <h2 style="margin-top:0">Highlighted projects</h2>
+          <div class="projects">
+            <article class="project">
+              <h3><a href="#" style="color:inherit;text-decoration:none">Project One</a></h3>
+              <p>Short summary of the project — purpose, tech used, and notable outcome. Link to repo or live demo.</p>
+            </article>
+
+            <article class="project">
+              <h3><a href="#" style="color:inherit;text-decoration:none">Project Two</a></h3>
+              <p>Short summary of the project — what you built and why it matters. Consider showing metrics or screenshots.</p>
+            </article>
+
+            <article class="project">
+              <h3><a href="#" style="color:inherit;text-decoration:none">Open Source Contribution</a></h3>
+              <p>Describe contributions to open source: libraries, PRs, or tools you maintain. Link to repos and issues.</p>
+            </article>
+          </div>
+        </div>
+
+        <div id="contact" class="card" style="margin-top:16px">
+          <h2 style="margin-top:0">Get in touch</h2>
+          <p style="color:var(--muted)">Email: <a href="mailto:you@example.com" style="color:var(--accent);text-decoration:none">you@example.com</a></p>
+          <p style="color:var(--muted)">Or connect on social media below.</p>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <div class="section-title">Skills</div>
+          <div class="skills">
+            <span class="skill">JavaScript</span>
+            <span class="skill">TypeScript</span>
+            <span class="skill">React</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">AWS</span>
+            <span class="skill">Docker</span>
+          </div>
+
+          <div style="margin-top:16px">
+            <div class="section-title">Contact</div>
+            <div style="color:var(--muted);font-size:14px">Based in City, Country</div>
+            <div class="socials">
+              <a href="https://github.com/atulrode" target="_blank">GitHub</a>
+              <a href="https://linkedin.com/in/atulrode" target="_blank">LinkedIn</a>
+              <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <div class="section-title">Availability</div>
+          <p style="color:var(--muted);margin:0">Open to new opportunities — freelance and full‑time.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>Made with ❤️ — Atul Rode</div>
+    </footer>
+  </div>
+</body>
+</html>
